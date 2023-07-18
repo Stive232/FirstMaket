@@ -1,0 +1,65 @@
+$main-font: 'Montserrat';
+$main-color: #FFF;
+$second-font-color: #343045;
+$base-padding: 50px 80px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #302C42;
+    max-width: 1500px;
+    padding: $base-padding
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.logo-images{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 34px;
+    border-radius: 40px;
+    color: $second-font-color;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    
+    &.not-fill{
+        border: 2px solid $main-color;
+        background: #ffffff00;
+        color: $main-color;
+    }
+}
+
+h2{
+    font-size: 24px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 41px;
+
+    .nav-link + .nav-link + .nav-link + .nav-link {
+        margin-right: 100px;
+    }
+}

@@ -1,0 +1,100 @@
+@import 'common';
+
+#hero {
+    display: flex;
+    gap:200px;
+    padding-top: 100px;
+
+    h1 {
+        font-size: 46px;
+        background: linear-gradient(156deg, #C0B7E8 0%, #8176AF 100%);
+        font-weight: 700;
+        line-height: normal;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        font-size: 16px;
+        color: $main-color;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 36px;
+        margin-bottom: 66px;
+    }
+
+    .btn-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 11px;
+    }
+
+    .hero-image{
+        margin-bottom: 88px;
+    }
+
+    .picture-frame {
+        width: 490px;
+        height: 426px;
+    }
+
+    .uuuu {
+        border-radius: 100px 100px 100px 240px;
+        background: #000000;
+    }
+}
+
+#contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 90px;
+    background: radial-gradient(2900.76% 50.13% at 50.00% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    padding: 26px, 0, 24.5, 0;
+
+
+    .vertical-line{
+
+        width: 1px;
+        height: 116.5px;
+        color: white;
+        padding: 26px, 47px, 24px, 42px;
+        
+    }
+    .address{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .phone{
+        display: flex;
+        align-items: center;
+
+        img{
+            padding-right: 29px;
+        }
+    }
+    .message{
+        display: flex;
+        align-items: center;
+        img{
+            padding-right: 23px;
+        }
+    }
+
+    h2{
+        color: $main-color
+    }
+
+    p{
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+
