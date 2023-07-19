@@ -9,6 +9,14 @@ body {
   margin: 0 auto;
 }
 
+p {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -135,8 +143,29 @@ nav .nav-link + .nav-link + .nav-link + .nav-link {
 #contact-info h2 {
   color: #FFF;
 }
-#contact-info p {
+
+#introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#introduction .sub-block {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+#introduction h2 {
   color: #FFF;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+#introduction span {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: normal;
+}
+#introduction img {
+  position: relative;
+  bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
