@@ -10,8 +10,8 @@ $base-padding: 50px 80px;
 
 body {
     background-color: #302C42;
-    max-width: 1500px;
-    padding: $base-padding
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 a {
@@ -23,8 +23,10 @@ a {
 
 header{
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    justify-content: space-evenly;
+    position: absolute;
+    gap: 150px;
+    padding-top: 50px;
 }
 
 
