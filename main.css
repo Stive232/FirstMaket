@@ -24,6 +24,29 @@ a {
   font-weight: 700;
 }
 
+h2 {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+nav .nav-link + .nav-link + .nav-link + .nav-link {
+  margin-right: 100px;
+}
+
 header {
   display: flex;
   justify-content: space-evenly;
@@ -53,22 +76,6 @@ header {
   border: 2px solid #FFF;
   background: rgba(255, 255, 255, 0);
   color: #FFF;
-}
-
-h2 {
-  color: #FFF;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 41px;
-}
-nav .nav-link + .nav-link + .nav-link + .nav-link {
-  margin-right: 100px;
 }
 
 #hero {
@@ -220,10 +227,15 @@ nav .nav-link + .nav-link + .nav-link + .nav-link {
 
 #services-section {
   display: grid;
+  position: relative;
   gap: 11px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 97px;
   margin-top: 71px;
+  padding-bottom: 600px;
+  background-image: url(assets/Group2\(1\).png);
+  background-repeat: no-repeat;
+  background-position-y: 200px;
 }
 #services-section .service-card {
   display: flex;
@@ -234,12 +246,27 @@ nav .nav-link + .nav-link + .nav-link + .nav-link {
   gap: 17px;
   background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
 }
+#services-section .horizontal-line {
+  width: 154px;
+  height: 1px;
+  margin-bottom: 10.5px;
+  background-color: rgba(192, 183, 232, 0.33);
+}
+#services-section img {
+  padding-bottom: 10px;
+}
+#services-section h3 {
+  padding-bottom: 6.5px;
+}
+#services-section p {
+  padding-bottom: 40px;
+}
 
 #how-we-build {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 97px;
-  margin-top: 271px;
+  margin-top: 84px;
 }
 #how-we-build .sub-block {
   display: flex;
@@ -255,4 +282,150 @@ nav .nav-link + .nav-link + .nav-link + .nav-link {
 #how-we-build img {
   position: relative;
   bottom: 30px;
+}
+
+#technologies-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 135px;
+}
+
+#stages-section {
+  display: flex;
+  justify-content: space-around;
+}
+#stages-section stage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+#stages-section .text {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  align-self: center;
+}
+#stages-section .text span {
+  top: 4;
+  left: 80px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+}
+
+#registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 112px;
+  padding: 90px 110px 84px 107px;
+  width: 1275px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#registration-form img {
+  margin-top: 30px;
+  margin-bottom: 21px;
+}
+#registration-form form,
+#registration-form input,
+#registration-form textarea {
+  width: 100%;
+  margin-top: 35px;
+}
+#registration-form .text-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#registration-form .name {
+  display: flex;
+  gap: 10px;
+  background: none;
+}
+#registration-form span {
+  color: #FFF;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+#registration-form .button {
+  margin-top: 51px;
+}
+#registration-form input {
+  border-radius: 40px;
+  border: 2px solid #FFF;
+  padding-top: 27px;
+  padding-left: 42px;
+  padding-bottom: 28px;
+  background: none;
+  color: #FFF;
+}
+#registration-form textarea {
+  border-radius: 40px;
+  border: 2px solid #FFF;
+  padding-top: 27px;
+  padding-left: 42px;
+  padding-bottom: 166px;
+  background: none;
+  color: #FFF;
+}
+
+footer {
+  margin-bottom: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(assets/vectors/footer-group.svg);
+  background-position-y: -205px;
+}
+footer .vector-image {
+  padding-top: 77px;
+}
+footer p {
+  padding-top: 49px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.82px;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  padding-top: 122px;
+  gap: 100px;
+}
+.footer-section .about-us {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 15px;
+}
+.footer-section .about-us a {
+  font-size: 16px;
+}
+.footer-section .socialize {
+  gap: 45px;
+}
+.footer-section .socialize a {
+  font-size: 12px;
+}
+.footer-section .images {
+  display: flex;
+  gap: 20px;
+}
+.footer-section span {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }/*# sourceMappingURL=main.css.map */
