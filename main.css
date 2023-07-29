@@ -191,6 +191,7 @@ header {
 }
 #about .about-image {
   position: absolute;
+  z-index: -1;
   left: -100px;
 }
 #about .about-content {
