@@ -36,6 +36,14 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: normal;
+  font-style: normal;
+}
+
+span {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: normal;
 }
 
 nav {
@@ -111,6 +119,8 @@ header {
 #hero .picture-frame {
   width: 490px;
   height: 426px;
+  position: absolute;
+  z-index: -1;
 }
 #hero .contant .text {
   padding-top: 300px;
@@ -190,10 +200,6 @@ header {
   flex-direction: column;
 }
 #about .about-content span {
-  color: #FFF;
-  font-size: 36px;
-  font-weight: 300;
-  line-height: normal;
   padding-bottom: 42px;
 }
 #about .about-content p {
@@ -214,12 +220,6 @@ header {
   align-items: start;
   gap: 30px;
 }
-#why-build span {
-  color: #FFF;
-  font-size: 36px;
-  font-weight: 300;
-  line-height: normal;
-}
 #why-build img {
   position: relative;
   bottom: 30px;
@@ -232,8 +232,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 97px;
   margin-top: 71px;
-  padding-bottom: 600px;
-  background-image: url(assets/Group2\(1\).png);
+  padding-bottom: 11px;
   background-repeat: no-repeat;
   background-position-y: 200px;
 }
@@ -262,6 +261,25 @@ header {
   padding-bottom: 40px;
 }
 
+.services-container {
+  position: relative;
+}
+.services-container .services-container-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 11px;
+}
+.services-container .services-container-image .group2 {
+  z-index: -1;
+  position: absolute;
+  top: 100px;
+}
+.services-container .services-container-image span {
+  margin-bottom: 35px;
+}
+
 #how-we-build {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -273,12 +291,6 @@ header {
   align-items: start;
   gap: 30px;
 }
-#how-we-build span {
-  color: #FFF;
-  font-size: 36px;
-  font-weight: 300;
-  line-height: normal;
-}
 #how-we-build img {
   position: relative;
   bottom: 30px;
@@ -286,9 +298,9 @@ header {
 
 #technologies-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 135px;
+  margin-top: 40px;
 }
 
 #stages-section {
@@ -304,8 +316,7 @@ header {
 #stages-section .text {
   display: flex;
   position: relative;
-  align-items: flex-end;
-  align-self: center;
+  justify-content: center;
 }
 #stages-section .text span {
   top: 4;
@@ -313,7 +324,17 @@ header {
   color: #FFF;
   font-size: 24px;
   font-weight: 700;
+}
+#stages-section .text img {
+  width: 67px;
+  height: 67px;
   position: absolute;
+  left: -30px;
+  top: -20px;
+}
+#stages-section .vector {
+  position: absolute;
+  z-index: -1;
 }
 
 #registration-form {
@@ -337,6 +358,7 @@ header {
 #registration-form textarea {
   width: 100%;
   margin-top: 35px;
+  resize: none;
 }
 #registration-form .text-form {
   display: flex;
@@ -426,6 +448,7 @@ footer p {
   color: #FFF;
   font-family: "Montserrat";
   font-style: normal;
+  font-size: 16px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 19.5px;
 }/*# sourceMappingURL=main.css.map */
